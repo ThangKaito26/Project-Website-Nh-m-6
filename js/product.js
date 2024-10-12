@@ -16,3 +16,15 @@ const activeThumbnail = document.querySelector('.thumbnail-active');
 activeThumbnail.addEventListener('click', () => {
   mainImage.src = originalImageSrc; // Quay lại ảnh chính ban đầu
 });
+
+//------------Viền màu sản phẩm
+document.querySelectorAll('.thumbnail-button').forEach(button => {  
+  button.addEventListener('click', function() {  
+      // Xóa lớp 'selected' khỏi tất cả ảnh  
+      document.querySelectorAll('.thumbnail-button img').forEach(img => {  
+          img.classList.remove('selected');  
+      });  
+      // Thêm lớp 'selected' vào ảnh được nhấn  
+      this.querySelector('img').classList.add('selected');  
+  });  
+});

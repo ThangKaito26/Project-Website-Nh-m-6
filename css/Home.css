@@ -1,4 +1,8 @@
 /* CSS cho header */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FFE1FF;
     font-family: Arial, sans-serif;
@@ -16,7 +20,7 @@ body {
 
 .logo img {
     width: 200px;
-    
+
 }
 
 .title {
@@ -91,6 +95,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 /* ------------------------------------------------------------ */
 /* CSS cho nav-bar */
 .nav-bar {
@@ -118,6 +123,11 @@ body {
     color: #7E60BF;
     /* Màu chữ */
 }
+
+.nav-item a {
+    text-decoration: none;
+}
+
 /* ------------------------------------------------------------ */
 /* CSS  cho submenu */
 .submenu {
@@ -127,20 +137,24 @@ body {
     padding: 10px;
     line-height: 25px;
     height: auto;
-    top: 100%; /* Đặt submenu ở dưới nav-item */
-    left: 0;  /* Căn trái submenu với nav-item */
+    top: 100%;
+    /*Đặt submenu ở dưới nav-item */
+    left: 0;
+    /*Căn trái submenu với nav-item */
     border-radius: 10px;
     list-style-type: none;
     display: none;
     /* Ẩn submenu mặc định */
     z-index: 10;
-    transition: opacity 0.3s ease-in-out; /* Thêm hiệu ứng chuyển động */
+    transition: opacity 0.3s ease-in-out;
+    /* Thêm hiệu ứng chuyển động */
 }
 
 .nav-item:hover .submenu {
     display: block;
     /* Hiển thị submenu khi hover */
-    opacity: 1; /* Hiển thị submenu với opacity là 1 */
+    opacity: 1;
+    /* Hiển thị submenu với opacity là 1 */
 }
 
 .submenu ul {
@@ -161,6 +175,7 @@ body {
     padding: 10px;
     border-radius: 10px;
 }
+
 /* ------------------------------------------------------------------------------------------- */
 /* CSS  cho nội dung (container, row, col) */
 
@@ -191,21 +206,24 @@ body {
     padding-right: 15px;
     padding-left: 15px;
 }
+
 /* ------------------------------------------------------------------------------------------- */
 /* CSS RIGHT */
-.box{
+.box {
     margin-top: -20px;
 }
 
-.news{
+.news {
     margin-top: 10px;
     margin-left: -10px;
 }
+
 /* ------------------------------------------------------------------------------------------- */
 /* CSS cho cuộn slider */
 #carouselExample {
-    margin-top: 20px; /*thêm margin top âm để bù lại */
-  }
+    margin-top: 20px;
+    /*thêm margin top âm để bù lại */
+}
 
 .carousel {
     position: relative;
@@ -251,6 +269,7 @@ body {
 .carousel-item:not(.active) {
     display: none;
 }
+
 /* ------------------------------------------------------------------------------------------- */
 /* CSS cho sản phẩm nổi bật, sản phẩm bán chạy */
 .mt-2 {
@@ -340,6 +359,7 @@ body {
 .mb-4 {
     margin-bottom: 32px;
 }
+
 /* ------------------------------------------------------------------------------------------- */
 /* Product */
 .promotion-section {
@@ -367,17 +387,31 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 200px; /* Sử dụng đơn vị cố định */
-    min-width: 200px; /* Đặt kích thước tối thiểu */
-    max-width: 200px; /* Đặt kích thước tối đa */
+    width: 200px;
+    /* Sử dụng đơn vị cố định */
+    min-width: 200px;
+    /* Đặt kích thước tối thiểu */
+    max-width: 200px;
+    /* Đặt kích thước tối đa */
+    cursor: pointer;
 }
 
+/* hover thay động cho sản phẩm */
+.product-item:hover>img {
+    transform: translateY(-10px);
+    transition: 0.4s;
+
+}
+
+/*  */
 .product-item img {
     margin-bottom: 16px;
     max-width: 100%;
     height: auto;
-    max-height: 300px; /* Giới hạn chiều cao ảnh */
+    max-height: 300px;
+    /* Giới hạn chiều cao ảnh */
 }
+
 
 .product-item h3 {
     font-size: 16px;
@@ -397,53 +431,89 @@ body {
 }
 
 /* ------------------------------------------------------------------------------------------- */
+/* CSS Nút back top */
+/* From Uiverse.io by vinodjangid07 */
+.button-back{
+    display: inline;
+}
+.button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    margin-left: -100px;
+    margin-top: -70px;
+
+}
+
+.svgIcon {
+    width: 30px;
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
 /* CSS cho footer */
 .container {
     margin: 0 auto;
     padding: 0 16px;
-  }
-  
-  .footer {
+}
+
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 0;
     margin-top: 32px;
     border-top: 1px solid #e5e5e5;
-  }
-  
-  .footer-left {
+}
+
+.footer-left {
     display: flex;
     align-items: center;
-  }
-  
-  .footer-logo {
+}
+
+.footer-logo {
     margin-right: 8px;
     text-decoration: none;
-    color: #6c757d; /* Màu text-body-secondary */
-  }
-  
-  .footer-text {
-    color: #6c757d; /* Màu text-body-secondary */
-  }
-  
-  .footer-nav {
+    color: #6c757d;
+    /* Màu text-body-secondary */
+}
+
+.footer-text {
+    color: #6c757d;
+    /* Màu text-body-secondary */
+}
+
+.footer-nav {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .footer-nav li {
+}
+
+.footer-nav li {
     margin-left: 16px;
-  }
-  
-  .footer-icon {
+}
+
+.footer-icon {
     color: #6c757d;
     text-decoration: none;
-  }
-  
-  .footer-icon svg {
+}
+
+.footer-icon svg {
     vertical-align: middle;
-  }
-  
+}

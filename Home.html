@@ -13,10 +13,10 @@
 
 <body>
     <!-- Menu đầu trang -->
-    <div class="menu">
+    <div id="menu" class="menu">
         <div class="header">
             <div class="logo">
-                <img alt="Digiphone logo" src="img/logo/STORE.png" />
+                <a href="Home.html"><img alt="Digiphone logo" src="img/logo/STORE.png" /></a>
             </div>
             <div class="search-bar">
                 <input class="search-input" placeholder="Tìm kiếm sản phẩm..." type="text" />
@@ -43,7 +43,7 @@
         <ul class="nav-bar">
             <li class="nav-item">
                 <i class="fas fa-mobile-alt"></i>
-                <span>ĐIỆN THOẠI</span>
+                <a href="#NEW"><span>ĐIỆN THOẠI</span></a>
                 <ul class="submenu">
                     <li><a href="#">Điện thoại 1</a></li>
                     <li><a href="#">Điện thoại 2</a></li>
@@ -52,7 +52,16 @@
             </li>
             <li class="nav-item">
                 <i class="fab fa-apple"></i>
-                <span>iPhone</span>
+                <a href="#IPHONE"><span>IPHONE</span></a>
+                <ul class="submenu">
+                    <li><a href="#">iPhone 14</a></li>
+                    <li><a href="#">iPhone 13</a></li>
+                    <li><a href="#">iPhone SE</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-tablet-alt"></i>
+                <a href="#OPPO"><span>OPPO</span></a>
                 <ul class="submenu">
                     <li><a href="#">iPhone 14</a></li>
                     <li><a href="#">iPhone 13</a></li>
@@ -61,7 +70,7 @@
             </li>
             <li class="nav-item">
                 <i class="fab fa-android"></i>
-                <span>SAMSUNG</span>
+                <a href="#REALMI"><span>REALMI</span></a>
                 <ul class="submenu">
                     <li><a href="#">Galaxy S21</a></li>
                     <li><a href="#">Galaxy A52</a></li>
@@ -69,17 +78,17 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <i class="fab fa-google"></i>
-                <span>GOOGLE</span>
+                <i class="fa-solid fa-s"></i>
+                <a href="#SAMSUNG"><span>SAMSUNG</span></a>
                 <ul class="submenu">
-                    <li><a href="#">Pixel 6</a></li>
-                    <li><a href="#">Pixel 5</a></li>
-                    <li><a href="#">Pixel 4a</a></li>
+                    <li><a href="#">Galaxy S21</a></li>
+                    <li><a href="#">Galaxy A52</a></li>
+                    <li><a href="#">Galaxy Note 20</a></li>
                 </ul>
             </li>
             <li class="nav-item">
                 <i class="fa-solid fa-v"></i>
-                <span>VIVO</span>
+                <a href="#VIVO"><span>VIVO</span></a>
                 <ul class="submenu">
                     <li><a href="#">Vivo V21</a></li>
                     <li><a href="#">Vivo Y33s</a></li>
@@ -87,17 +96,8 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <i class="fas fa-bolt"></i>
-                <span>REALME</span>
-                <ul class="submenu">
-                    <li><a href="#">Realme 8 Pro</a></li>
-                    <li><a href="#">Realme GT</a></li>
-                    <li><a href="#">Realme Narzo 30</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
                 <i class="fas fa-tablet-alt"></i>
-                <span>XIAOMI</span>
+                <a href="#XIAOMI"><span>XIAOMI</span></a>
                 <ul class="submenu">
                     <li><a href="#">Mi 11</a></li>
                     <li><a href="#">Redmi Note 10</a></li>
@@ -213,7 +213,7 @@
             </div>
         </section>
         <!-- Sản phẩm mới -->
-        <section class="promotion-section bg-blue-200">
+        <section id="NEW" class="promotion-section bg-blue-200">
             <h2>SẢN PHẨM MỚI</h2>
             <div class="product-grid">
                 <div class="product-item">
@@ -308,70 +308,10 @@
                 </div>
             </div>
         </section>
-        <!-- Sản phẩm bán chạy -->
-        <section class="promotion-section bg-purple-200">
-            <h2>SẢN PHẨM BÁN CHẠY</h2>
+        <!-- Sản phẩm hãng -->
+        <section id="IPHONE" class="promotion-section bg-purple-200">
+            <h2>IPHONE</h2>
             <div class="product-grid">
-                <div class="product-item">
-                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
-                        width="200" height="300" />
-                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
-                    <p class="price">27,990,000₫</p>
-                </div>
-                <div class="product-item">
-                    <img alt="Google Pixel 7 Pro" src="img/products/samsung-galaxy-s24-ultra-grey-thumbnew-600x600.jpg"
-                        width="200" height="300" />
-                    <h3>Google Pixel 7 Pro Likenew Fullbox</h3>
-                    <p class="price">Liên hệ</p>
-                </div>
-                <div class="product-item">
-                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
-                        width="200" height="300" />
-                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
-                    <p class="price">27,990,000₫</p>
-                </div>
-                <div class="product-item">
-                    <img alt="Google Pixel 7 Pro" src="img/products/samsung-galaxy-s24-ultra-grey-thumbnew-600x600.jpg"
-                        width="200" height="300" />
-                    <h3>Google Pixel 7 Pro Likenew Fullbox</h3>
-                    <p class="price">Liên hệ</p>
-                </div>
-                <div class="product-item">
-                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
-                        width="200" height="300" />
-                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
-                    <p class="price">27,990,000₫</p>
-                </div>
-                <div class="product-item">
-                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
-                        width="200" height="300" />
-                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
-                    <p class="price">27,990,000₫</p>
-                </div>
-                <div class="product-item">
-                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
-                        width="200" height="300" />
-                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
-                    <p class="price">27,990,000₫</p>
-                </div>
-                <div class="product-item">
-                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
-                        width="200" height="300" />
-                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
-                    <p class="price">27,990,000₫</p>
-                </div>
-                <div class="product-item">
-                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
-                        width="200" height="300" />
-                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
-                    <p class="price">27,990,000₫</p>
-                </div>
-                <div class="product-item">
-                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
-                        width="200" height="300" />
-                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
-                    <p class="price">27,990,000₫</p>
-                </div>
                 <div class="product-item">
                     <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
                         width="200" height="300" />
@@ -404,7 +344,194 @@
                 </div>
             </div>
         </section>
+        <section id="OPPO" class="promotion-section bg-purple-200">
+            <h2>OPPO</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+            </div>
+        </section>
+        <section id="REALMI" class="promotion-section bg-purple-200">
+            <h2>REALMI</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+            </div>
+        </section>
+        <section id="SAMSUNG" class="promotion-section bg-purple-200">
+            <h2>SAMSUNG</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+            </div>
+        </section>
+        <section id="VIVO" class="promotion-section bg-purple-200">
+            <h2>VIVO</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+            </div>
+        </section>
+        <section id="XIAOMI" class="promotion-section bg-purple-200">
+            <h2>XIAOMI</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+                <div class="product-item">
+                    <img alt="SONY Xperia 1 VI" src="img/products/samsung-galaxy-a05-black-thumbnew-600x600.jpg"
+                        width="200" height="300" />
+                    <h3>SONY Xperia 1 VI ( Mark 6 ) (12GB | 512GB ) Dual mới fullbox</h3>
+                    <p class="price">27,990,000₫</p>
+                </div>
+            </div>
+        </section>
+        <!-- Nút back top -->
+        <div class="button-back">
+            <a href="#menu"><button class="button">
+                    <svg class="svgIcon" viewBox="0 0 384 512">
+                        <path
+                            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+                        </path>
+                    </svg>
+                </button>
+            </a>
+        </div>
     </div>
+
     <!-- footer -->
     <div class="container">
         <footer class="footer">
@@ -449,6 +576,8 @@
             </ul>
         </footer>
     </div>
+
+
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

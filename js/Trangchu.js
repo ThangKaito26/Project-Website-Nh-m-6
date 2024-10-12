@@ -31,3 +31,5 @@ function nextSlide() {
 function prevSlide() {  
   showSlide(currentSlide - 1);  
 }
+//
+
